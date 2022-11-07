@@ -1,12 +1,21 @@
-# Welcome to your CDK Go project!
+# cdk-lambda-go
 
-This is a blank project for CDK development with Go.
+Sample CDK script with **Go** to create a Lambda function in **Go**.
 
-The `cdk.json` file tells the CDK toolkit how to execute your app.
+## Structure
+
+```bash
+.
+├── cdk-lambda-go.go       # main code to define stacks
+├── cdk-lambda-go_test.go  # test code
+├── cdk.json               # CDK settings
+└── lambda                 # resources for Lambda
+    └── handler.go
+```
 
 ## Useful commands
 
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
- * `go test`         run unit tests
+- `cdk deploy` deploy this stack to your default AWS account/region
+- `cdk diff` compare deployed stack with current state
+- `cdk synth` emits the synthesized CloudFormation template
+- `go test` run unit tests
