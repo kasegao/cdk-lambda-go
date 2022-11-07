@@ -13,6 +13,26 @@ Sample CDK script with **Go** to create a Lambda function in **Go**.
     └── handler.go
 ```
 
+## Quick Start
+
+Deploy Stack
+
+```bash
+cdk deploy
+```
+
+Test
+
+```bash
+aws sqs send-message --queue-url <SQS URL> --message-body "Test message."
+```
+
+then, you can find the following log in CloudWatch:
+
+```txt
+The message <MessageId> for event source aws:sqs = Test message.
+```
+
 ## Useful commands
 
 - `cdk deploy` deploy this stack to your default AWS account/region
